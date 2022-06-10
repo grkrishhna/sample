@@ -23,7 +23,7 @@ public class CreateUser {
 		httpRequest.body(requestParams.toJSONString());
 		Response response=httpRequest.request(Method.POST, "users");
 		String responseBody=response.getBody().asString();
-		System.out.println("body is "+responseBody);
+		System.out.println("body is "+responseBody123);
 		int statusCode=response.statusCode();
 		System.out.println("response code is "+statusCode);
 		Assert.assertEquals(statusCode, 201);
