@@ -27,6 +27,7 @@ public class CreateUser {
 		int statusCode=response.statusCode();
 		System.out.println("response code is "+statusCode);
 		Assert.assertEquals(statusCode, 201);
+		System.out.println("hello world");
 		
 	}
 	
